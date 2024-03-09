@@ -1,0 +1,23 @@
+.commentContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  margin-top: 5px;
+  .commentDetail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .controls {
+      color: blue;
+      font-size: 12px;
+      span {
+        margin-right: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
