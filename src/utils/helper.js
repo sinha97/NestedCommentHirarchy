@@ -9,11 +9,11 @@ export const updatedComment = (comment, targetId, newComment) => {
                 replies: []
             })
         }
+        if (comment.replies.length > 0) {
+            comment.replies = updatedComment(comment.replies, targetId, newComment)
+        }
     }
 
-    if (comment.replies.length > 0) {
-        comment.replies = updatedComment(comment.replies, targetId, newComment)
-    }
 
     return commentsCopy;
 }
